@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewCell.h
 //  test
 //
 //  Created by user-letsgo6 on 21.09.17.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyModel.h"
 
-@interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
-
-
+@interface TableViewCell : UITableViewCell
+- (void)configureCellWithMyModel:(MyModel *)model;
 @end
-

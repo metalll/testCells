@@ -15,6 +15,9 @@
 		D7B708231F73FF3700764E46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B708221F73FF3700764E46 /* main.m */; };
 		D7B7082D1F73FF3700764E46 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B7082C1F73FF3700764E46 /* testTests.m */; };
 		D7B708381F73FF3700764E46 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B708371F73FF3700764E46 /* testUITests.m */; };
+		D7B708491F73FF9E00764E46 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B708471F73FF9E00764E46 /* TableViewCell.m */; };
+		D7B7084A1F73FF9E00764E46 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B708481F73FF9E00764E46 /* TableViewCell.xib */; };
+		D7B7084F1F73FFCC00764E46 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B7084E1F73FFCC00764E46 /* MyModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		D7B708331F73FF3700764E46 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B708371F73FF3700764E46 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		D7B708391F73FF3700764E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7B708461F73FF9E00764E46 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		D7B708471F73FF9E00764E46 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		D7B708481F73FF9E00764E46 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		D7B7084D1F73FFCC00764E46 /* MyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
+		D7B7084E1F73FFCC00764E46 /* MyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 		D7B708121F73FF3700764E46 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				D7B7084B1F73FFA800764E46 /* MyModel */,
+				D7B708451F73FF8500764E46 /* MyCell */,
 				D7B708131F73FF3700764E46 /* AppDelegate.h */,
 				D7B708141F73FF3700764E46 /* AppDelegate.m */,
 				D7B708161F73FF3700764E46 /* ViewController.h */,
@@ -130,6 +140,25 @@
 				D7B708391F73FF3700764E46 /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		D7B708451F73FF8500764E46 /* MyCell */ = {
+			isa = PBXGroup;
+			children = (
+				D7B708461F73FF9E00764E46 /* TableViewCell.h */,
+				D7B708471F73FF9E00764E46 /* TableViewCell.m */,
+				D7B708481F73FF9E00764E46 /* TableViewCell.xib */,
+			);
+			path = MyCell;
+			sourceTree = "<group>";
+		};
+		D7B7084B1F73FFA800764E46 /* MyModel */ = {
+			isa = PBXGroup;
+			children = (
+				D7B7084D1F73FFCC00764E46 /* MyModel.h */,
+				D7B7084E1F73FFCC00764E46 /* MyModel.m */,
+			);
+			path = MyModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B708201F73FF3700764E46 /* LaunchScreen.storyboard in Resources */,
+				D7B7084A1F73FF9E00764E46 /* TableViewCell.xib in Resources */,
 				D7B7081D1F73FF3700764E46 /* Assets.xcassets in Resources */,
 				D7B7081B1F73FF3700764E46 /* Main.storyboard in Resources */,
 			);
@@ -266,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B708181F73FF3700764E46 /* ViewController.m in Sources */,
+				D7B7084F1F73FFCC00764E46 /* MyModel.m in Sources */,
+				D7B708491F73FF9E00764E46 /* TableViewCell.m in Sources */,
 				D7B708231F73FF3700764E46 /* main.m in Sources */,
 				D7B708151F73FF3700764E46 /* AppDelegate.m in Sources */,
 			);
